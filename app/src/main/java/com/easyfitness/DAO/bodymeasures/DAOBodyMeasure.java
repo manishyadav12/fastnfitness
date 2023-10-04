@@ -42,12 +42,7 @@ public class DAOBodyMeasure extends DAOBase {
         mProfile = pProfile;
     }
 
-    /**
-     * @param pDate           date of the weight measure
-     * @param pBodymeasure_id id of the body part
-     * @param pMeasure        body measure
-     * @param pProfileID      profil associated with the measure
-     */
+
     public void addBodyMeasure(Date pDate, int pBodymeasure_id, float pMeasure, long pProfileID) {
         SQLiteDatabase db = this.getWritableDatabase();
 
